@@ -1,11 +1,18 @@
 # created class 1
-class country(): 
-    def __init__(self, state,city, county,district):
-        self._state= state
-        self.__city= city 
-        self.county=  county
-        self.district= district
 
+class Employee(): 
+    def __init__(self, name, age):
+        # creating attributes
+        self.name= name
+        self.age= age
+        #creating method 
+class manager(Person):
+    def __init__(self,):
+
+class doctor(Person):
         print(f"my state is {self._state} and my city is in {self.__city} but my county is {self.county}")
-# inheriting ome class 
-mek = country("califronia", "san jose","santa clara", '')
+Gabrialla = Person("","")
+        
+ 
+
+
