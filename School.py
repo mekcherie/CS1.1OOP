@@ -17,8 +17,12 @@ class School:
 
 # initilized it/ calling it 
 businessschool = School("busines school", 2, "444 post st", 45646 )
-businessschool.information()
 businessschool.get_id()
+businessschool.information()
+
+
+
+
  
 
 
