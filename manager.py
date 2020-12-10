@@ -3,6 +3,8 @@ from School import School
 # inherting from class
 class Manager(School): 
     def __init__(self, name, year, address,id):
+      # super is The super() builtin returns a
+      # temporary object of the superclass that allows us to access methods of the base class.
       super().__init__(name, year, address, id)
       self.state_1 = ["Indiana", "California", "Texas"]
     

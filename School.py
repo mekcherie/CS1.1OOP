@@ -1,7 +1,6 @@
 import random
 class School:
-
-    # 2 instance attributecreated 
+      # init capaslock method lowercase
     def __init__(self, name, year, address, id):
     # class attributes 
         self.name= name 
@@ -17,30 +16,11 @@ class School:
     def information(self):
         print(f"{self.name} has been around {self.year} years and the address is {self.address}")
 
-
-makeschool = School("makeschool", 2, "555 post st", 45646 )
-makeschool.information()
-makeschool.get_id()
-
-
-
-
-
-
-
-
-
-
-
-
-# we created a class
-# the badge number is a class attributes(adding class attributes)
-# instance attributes, parameteres 
-#def
-# creating an attribute and assigning it 
-# creating class method 
-# passing arguments 
 # initilized it/ calling it 
+businessschool = School("busines school", 2, "444 post st", 45646 )
+businessschool.information()
+businessschool.get_id()
+
  
 
 
