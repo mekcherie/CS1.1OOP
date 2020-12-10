@@ -1,26 +1,33 @@
 import random
 class School:
-    badge_numbers = [9786, 5864, 2849]
-    school_address = ("3566 post road")
 
-    def __init__(self, name, year):
+    # 2 instance attributecreated 
+    def __init__(self, name, year, address, id):
+    # class attributes 
         self.name= name 
         self.year= year 
+        self.address = address
+        self.id = id
+        
+    # 2 methods created 
+    def get_id(self):
+        bn = self.id
+        print(f"school Id is {bn}")
 
-    @classmethod 
-    def Employee (cls):
-        bn = random.choice (cls.badge_numbers)
-        print(f"my badge number is {bn}")
-
-    def rn (self):
-        al = School.school_address
-        print(f"my name is {self.name} I'm year {self.year} and my address is {al}")
+    def information(self):
+        print(f"{self.name} has been around {self.year} years and the address is {self.address}")
 
 
-# luke = School("Luke", 2)
-# luke.rn()
-# jacob = School("jacob", 25) 
-# jacob.Employee()
+makeschool = School("makeschool", 2, "555 post st", 45646 )
+makeschool.information()
+makeschool.get_id()
+
+
+
+
+
+
+
 
 
 

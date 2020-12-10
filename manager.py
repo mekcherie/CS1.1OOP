@@ -2,23 +2,20 @@ import random
 from School import School
 # inherting from class
 class Manager(School): 
-    address_1 = ["Indiana", "California", "Texas"]
-
-    def __init__(self, name, year, position):
-        self.name = name
-        self.year = year
-        self.position = position
-
-    def location(self):
-        l = random.choice(Manager.address_1)
-        print(l)
+    def __init__(self, name, year, address,id):
+      super().__init__(name, year, address, id)
+      self.state_1 = ["Indiana", "California", "Texas"]
+    
+    def branch(self):
+        l = random.choice(self.state_1)
+        print(f"{self.name} is teaching at {l}")
         
-        # # overriding it 
-        # al = ("3456 mlk blvd")
-        # print(f"my name is {self.name} I'm year {self.year} and I'm the school {self.position} and my address is {al}")
+        # overriding it
+    def information(self):
+        print(f"school name is {self.name} and branch is {random.choice(self.state_1)}")
  
-abiy = Manager("abiy", 5, "School Manager")
-abiy.address_1()
-
+abiy = Manager("abiy", 2, "3456 mlk blvd", 5425626)
+abiy.branch()
+abiy.information()
 # private attribute double underscore 
 # not to touch it outside of class 
