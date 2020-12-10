@@ -1,4 +1,3 @@
-import random
 class School:
       # init capaslock method lowercase
     def __init__(self, name, year, address, id):
@@ -20,7 +19,6 @@ class School:
 businessschool = School("busines school", 2, "444 post st", 45646 )
 businessschool.information()
 businessschool.get_id()
-
  
 
 

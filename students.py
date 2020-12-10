@@ -1,10 +1,10 @@
 class Students:
     def __init__(self, student_name, age, gender, subject):
-        self.__student_name = student_name
+        self.__student_name = student_name  #private you can not touch it from outside the class, the result will be Attribute Error
         self.__age = age
         self.__gender = gender
         self.__subject = subject
-    # instance method 
+        
     def identity(self):
         print(f"I am a {self.__age} years old {self.__gender} student")
 
